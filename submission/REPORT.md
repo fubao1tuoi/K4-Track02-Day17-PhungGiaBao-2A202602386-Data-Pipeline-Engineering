@@ -1,12 +1,12 @@
 # K4-Track02-Day17 — Report cá nhân
 
-**Họ tên / MSSV:** `[Phùng Gia Bảo` / `2A202602386`
+**Họ tên / MSSV:** `Phùng Gia Bảo` / `2A202602386`
 
 **Repo:** https://github.com/fubao1tuoi/K4-Track02-Day17-Data-Pipeline-Engineering
 
 **Commit bài nộp:** `9f1e1a2664021bc709046995e4507d7ac9849bd4`
 
-**AI đã dùng và phạm vi hỗ trợ:** OpenAI Codex; hỗ trợ đọc đề/repo, chẩn đoán ba lỗi, đề xuất và thực hiện thay đổi trong `pipeline/`, giải thích lệnh PowerShell, chạy và đối chiếu các kiểm tra. Tôi đã review diff và chạy lại toàn bộ bằng chứng.
+**AI đã dùng và phạm vi hỗ trợ:** OpenAI Codex; hỗ trợ đọc đề/repo, chẩn đoán ba lỗi, đề xuất và thực hiện thay đổi trong `pipeline/`, giải thích lệnh PowerShell, chạy và đối chiếu các kiểm tra, triển khai B1 và hỗ trợ cấu trúc bản brainstorm B2. Tôi đã review diff và chạy lại toàn bộ bằng chứng.
 **Nguồn tham khảo khác:** README, rubric, checkpoints và mã nguồn/test đi kèm trong repo.
 
 ## 1. Ba lỗi
@@ -96,3 +96,22 @@ $ python -m scripts.parity
   [OK ] gold_feature_daily   lite 8630e04a61d1  dbt 8630e04a61d1
 RESULT: PARITY — both implementations agree
 ```
+
+### Bonus B1 — LLM cache và schema validation
+
+```text
+$ python -m scripts.bonus_llm
+=== bonus: LLM labelling of 11 live tickets ===
+  cost estimate before running: ~484 tokens = $0.0010 per full run
+  [OK ] first run labels every live ticket
+  [OK ] re-run with same model + prompt makes 0 LLM calls
+  [OK ] every Gold label is bug / billing / other
+  [OK ] off-schema answers go to llm_label_quarantine
+  [OK ] new prompt version re-labels on purpose
+  [OK ] labels carry their prompt version
+BONUS PASS
+```
+
+### Bonus B2 — Brainstorm kiến trúc
+
+Bằng chứng: [`bonus/DESIGN.md`](../bonus/DESIGN.md) — thiết kế pipeline trợ lý tra cứu pháp luật Việt Nam, 1.475 từ, gồm năm quyết định có trade-off, phương án bị loại và sơ đồ kiến trúc.
