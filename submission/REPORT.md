@@ -4,7 +4,7 @@
 
 **Repo:** https://github.com/fubao1tuoi/K4-Track02-Day17-Data-Pipeline-Engineering
 
-**Commit bài nộp:** `9f1e1a2664021bc709046995e4507d7ac9849bd4`
+**Commit bài nộp:** `a9850242fa64f151993db76d272d163fe88712e8`
 
 **AI đã dùng và phạm vi hỗ trợ:** OpenAI Codex; hỗ trợ đọc đề/repo, chẩn đoán ba lỗi, đề xuất và thực hiện thay đổi trong `pipeline/`, giải thích lệnh PowerShell, chạy và đối chiếu các kiểm tra, triển khai B1 và hỗ trợ cấu trúc bản brainstorm B2. Tôi đã review diff và chạy lại toàn bộ bằng chứng.
 **Nguồn tham khảo khác:** README, rubric, checkpoints và mã nguồn/test đi kèm trong repo.
