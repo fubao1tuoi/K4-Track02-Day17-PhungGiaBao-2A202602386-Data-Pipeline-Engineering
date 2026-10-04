@@ -4,7 +4,7 @@
 
 **Repo:** https://github.com/fubao1tuoi/K4-Track02-Day17-Data-Pipeline-Engineering
 
-**Commit bài nộp:** `[ĐIỀN SHA COMMIT CUỐI SAU KHI COMMIT]`
+**Commit bài nộp:** `9f1e1a2664021bc709046995e4507d7ac9849bd4`
 
 **AI đã dùng và phạm vi hỗ trợ:** OpenAI Codex; hỗ trợ đọc đề/repo, chẩn đoán ba lỗi, đề xuất và thực hiện thay đổi trong `pipeline/`, giải thích lệnh PowerShell, chạy và đối chiếu các kiểm tra. Tôi đã review diff và chạy lại toàn bộ bằng chứng.
 **Nguồn tham khảo khác:** README, rubric, checkpoints và mã nguồn/test đi kèm trong repo.
